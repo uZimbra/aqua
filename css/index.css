@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --aqua-primary: aquamarine; 
+  --red-copy: #f9423a;
+  --gray-text: #848484;
+  --blue-primary: black;
+  --page-padding: 30rem;
+}
+
+@media(max-width: 1024px) {
+  :root {
+    --page-padding: 10rem;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.content {
+  background-color: rgb(246, 247, 247);
+}
+
+.business {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  line-height: 3.5rem;
+}
+
+.business #box {
+  height: 85vh;
+}
+
+.business-presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--blue-primary);
+  height: 100vh !important;
+  padding: 0 var(--page-padding);
+
+  background-image: url("../images/rea1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.business-presentation h1 {
+  font-family: 'Alkatra', cursive;
+  color: var(--aqua-primary);
+  font-size: 5rem;
+  margin-bottom: 8rem;
+}
+
+.business-presentation p {
+  color: white;
+}
+
+.business-presentation span {
+  margin-top: 5rem;
+}
+
+.business-presentation span button {
+  background-color: var(--red-copy);
+  border: none;
+  border-radius: 0.5rem;
+
+  transition: filter 0.2s;
+  cursor: pointer;
+}
+.business-presentation span button:hover {
+  filter: brightness(1.2);
+}
+
+.business-presentation span a {
+  all: unset;
+
+  display: block;
+  padding: 2rem 8rem;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+.business-goal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+
+  background-image: url("../images/business.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.business-goal p {
+  text-align: center;
+  color: var(--gray-text);
+}
+
+.business-segments {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 27rem;
+  background-color: white;
+  padding: 0 var(--page-padding);
+}
+
+.business-segments span h5 {
+  font-size: 1.3rem;
+}
+
+.business-segments p { 
+  color: var(--gray-text);
+  font-size: 1.6rem;
+}
+
+@media(max-width: 768px) {
+  .business-segments {
+    flex-direction: column;
+    height: 40rem;
+    padding: 0 5rem;
+    justify-content: center;
+  }
+
+  .business-segments p {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+
+.business-equip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 var(--page-padding);
+
+  background-image: url("../images/data-technology-blue-background-with-hacker-remixed-media.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.business-equip p {
+  color: white;
+}

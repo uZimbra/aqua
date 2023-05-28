@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --aqua-primary: aquamarine; 
+  --gray-text: #848484;
+  --title-text: rgb(44, 44, 44);
+  --page-padding: 30rem;
+}
+
+@media(max-width: 1024px) {
+  :root {
+    --page-padding: 10rem;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  color: var(--gray-text);
+}
+
+main {
+  padding: 0 var(--page-padding);
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+  background-color: rgb(246, 247, 247);
+}
+
+.services {
+  font-family: 'Nunito', sans-serif;
+  color: var(--gray-text);
+}
+
+.services h3 {
+  color: var(--title-text);
+}
+
+.services h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 3.5rem;
+}
+
+
+.service-box {
+  margin: 4rem 0;
+
+  border-radius: 2rem 0;
+  border: solid 0.2px rgb(242, 241, 241);
+  overflow: hidden;
+
+  background-color: white;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.service-box h3 {
+  padding-left: 4rem;
+  font-size: 4rem;
+}
+
+.service-box div {
+  height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-box p {
+  padding: 6rem 4rem;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.it-consulting {
+  background-image: url("../images/online-news.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.security-solutions {
+  background-image: url("../images/man-analysing-binary-code-virtual-screen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.security-solutions h3 {
+  color: white;
+}
+
+.data-management {
+  background-image: url("../images/programming-background-collage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.data-management h3 {
+  color: rgb(231, 231, 231);
+}
+
+
+.table-container {
+  margin: 8rem 0 2rem 0 ;
+}
+
+.price-table {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  background-color: white;
+}
+
+table td, table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.little-letters {
+  font-size: 1.2rem;
+}

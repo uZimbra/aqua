@@ -1,0 +1,13 @@
+footer {
+  height: 10vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-size: 1.4rem;
+}

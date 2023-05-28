@@ -1,0 +1,56 @@
+.app-header {
+  position: fixed;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 2rem var(--page-padding);
+}
+
+.app-logo {
+  all: unset;
+
+  display: flex;
+  align-items: center;
+  margin: 0 10rem 0 0;
+  user-select: none;
+  cursor: pointer;
+}
+
+.app-logo:hover {
+  text-decoration: underline;
+}
+
+.app-logo h1 {
+  font-family: "Alkatra", cursive;
+  color: var(--aqua-primary);
+}
+
+.app-logo img {
+  scale: 80%;
+}
+
+.app-header ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.app-header ul li {
+  list-style-type: none;
+  padding: 0 1.5rem;
+}
+
+.app-header ul li a {
+  all: unset;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: rgb(213, 213, 213);
+  cursor: pointer;
+}
+
+.app-header a:hover {
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
